@@ -1,0 +1,144 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/style.css">
+</head> -->
+
+<!-- <body id="LoginForm">
+    <div class="container-fluid">
+        <h1 class="form-heading"></h1>
+        <div class="login-form">
+            <div class="main-div">
+                <div class="panel">
+                    <h2>Customer Login</h2>
+                    <p>Please enter your email and password</p>
+                </div>
+                <form id="Login">
+
+                    <div class="form-group">
+
+
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Email Address">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+
+                    </div>
+                    <div class="forgot">
+                        <a href="reset.html">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+
+                </form> -->
+
+                <!-- <form name="loginform" onSubmit="return validateForm();" action="/public/customerdash.html" method="post">
+                        <label>User name</label>
+                        <input type="text" name="usr" placeholder="username"> 
+                        <label>Password</label>
+                        <input type="password" name="pword" placeholder="password">
+                        <input type="submit" value="Login"/>
+                    </form>
+                <script>
+                        function validateForm() {
+                            var un = document.loginform.usr.value;
+                            var pw = document.loginform.pword.value;
+                            var username = "username"; 
+                            var password = "password";
+                            if ((un == username) && (pw == password)) {
+                                return true;
+                                window.location.href = "customerdash.html";
+                            }
+                            else {
+                                alert ("Login was unsuccessful, please check your username and password");
+                                return false;
+                            }
+                      }
+                    </script>
+            </div>
+     
+        </div>
+    </div>
+    </div>
+
+
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body id="LoginForm">
+    <div class="container-fluid">
+        <h1 class="form-heading">Customer Dashboard Login</h1>
+        <div class="login-form">
+            <div class="main-div backgroundz">
+                <div class="panel">
+                    <h2>Customer Login</h2>
+                    <p>Please enter your email and password</p>
+                </div>
+
+
+
+
+
+                <form name="loginform" onSubmit="return validateForm();" action="/public/customerdash.html" method="post">
+                    <div class="form-group">
+                        <input type="text" name="usr" class="form-control" id="inputEmail" placeholder="Email Address">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="pword" class="form-control" id="inputPassword" placeholder="Password">
+                    </div>
+                    <div class="forgot">
+                        <a href="reset.html">Forgot password?</a>
+                    </div>
+                    <!-- <a href="./customers.html" type submit class="btn btn-primary" value="Login">Login</a> -->
+                    <!-- <input href = "./customerdash.html" type="submit" class="btn btn-primary" value="Login"/> -->
+                    <a href="./customerdash.html" class="btn btn-primary">Login</a>
+
+                </form>
+                <!-- <script>
+                    function validateForm() {
+                        var un = document.loginform.usr.value;
+                        var pw = document.loginform.pword.value;
+                        var username = "Customer1"; 
+                        var password = "test";
+                        if ((un == username) && (pw == password)) {
+                            return true;
+                            // window.location.replace("../customerdash.html");
+                        }
+                        else {
+                            alert ("Login was unsuccessful, please check your username and password");
+                            return false;
+                        }
+                  }
+                </script> -->
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+</body>
+
+</html>
