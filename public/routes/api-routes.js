@@ -11,6 +11,7 @@ module.exports = function (app) {
     });
   });
 
+
   app.post('/api/customers', function (req, res) {
     db.Customers.create(req.body).then(function (rows) {
       res.json({success:true});
@@ -27,6 +28,16 @@ module.exports = function (app) {
       }).then(function(row) {
         res.json(row);
       }).catch(function(error) {
+        res.json({ error: error });
+      });
+    });
+    
+    app.get('/api/panels', function (req, res) {
+      db.Panels.findAll({
+  
+      }).then(function (panel) {
+        res.json(panel);
+      }).catch(function (error) {
         res.json({ error: error });
       });
     });

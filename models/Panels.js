@@ -7,11 +7,11 @@ module.exports = function(sequelize, DataTypes) {
       panel_Name: {
         type: DataTypes.STRING
       },
-      avg_Efficiency: {
+      efficiency: {
         type: DataTypes.DECIMAL
       },
       watts: {
-        type: DataTypes.STRING
+        type: DataTypes.INTEGER
       },
       warranty_Yrs: {
         type: DataTypes.INTEGER
